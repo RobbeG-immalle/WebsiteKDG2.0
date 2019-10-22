@@ -46,8 +46,7 @@ li a {
     text-align: center;
     padding: 14px 12px;
     text-decoration: none;
-    border-top-left-radius: 21px;
-    border-top-right-radius: 21px;
+    border-radius: 25px;
     /*margin: 5px;*/
 }
 li a:hover
@@ -76,16 +75,26 @@ ul > li > ul
     left: 0;
     display: none;
     /*border: solid black 1px;*/
-    border-bottom-left-radius: 21px;
-    border-bottom-right-radius: 21px;
+    border-radius: 25px;
     position:absolute;
     width:100%;
     transition: max-height 500ms 800ms, opacity 300ms 800ms;
     background-color: lightskyblue;
 }
-.subnavBorder
+.subnavBorder1
 {
-    border-radius: 25px;
+    border-top-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.subnavBorder2
+{
+    border-radius: 0px;
+}
+.subnavBorder3
+{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 
 ul li:hover > ul,
