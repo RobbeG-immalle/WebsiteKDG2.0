@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/Website/css/stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="icon" href="../media/yellowIphoneX.png" type="image/x-icon"/>
+    <title>Personalisering</title>
+</head>
+<body class="bodygrid">
+<h1 class="verborgen">Personaliseringpagina</h1>
+<header class="grid classHeader">
+    <nav>
+        <h2 class="verborgen">Navigation</h2>
+        <ul>
+            <li><a href="/Website/index.html">Home</a></li>
+            <li><a href="Product.html">Product</a></li>
+            <li><a class="active" href="Personalisering.html">Personalisering</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="grid classMain">
+    <article>
+        <section>
+            <h2 class="center">Personaliseer je keuze!</h2>
+            <p class="center">Kies eerst de gewenste Smartphone!</p>
+            <h2 class="center">Bestelling</h2>
+            <form action="../html/resultaat.html" autocomplete="on" method="get">
+                <fieldset class="formulier">
+                    <legend class="formPadding">Keuze smartphone:</legend>
+                    <label for="keuzeSmartphone">
+                        Maak je keuze!
+                        <select name="keuzeSmartphone" id="keuzeSmartphone">
+                            <optgroep label="iPhones:">
+                                <option value="iPhone7">iPhone 7</option>
+                                <option value="iPhone8">iPhone 8</option>
+                                <option value="iPhoneX">iPhone X</option>
+                                <option value="iPhone11">iPhone 11</option>
+                            </optgroep>
+                            <optgroep label="Samsung:">
+                                <option value="SamsungA20e">Samsung A20e</option>
+                                <option value="SamsungA40">Samsung A40</option>
+                                <option value="SamsungA50">Samsung A50</option>
+                                <option value="SamsungA70">Samsung A70</option>
+                            </optgroep>
+                            <optgroep label="iPhones:">
+                                <option value="HuaweiY5">Huawei Y5</option>
+                                <option value="HuaweiP20lit">Huawei P20 lite</option>
+                                <option value="HuaweiP30Lite">Huawei P30 Lite</option>
+                                <option value="HuaweiP30Pro">Huewei P30 Pro</option>
+                            </optgroep>
+                            <optgroep label="iPhones:">
+                                <option value="XiaomiRedmiNote7">Xiaomi Redmi Note 7</option>
+                                <option value="XiaomiMiA3">Xiaomi Mi A3</option>
+                                <option value="XiaomiMi9T">Xiaomi Mi 9T</option>
+                                <option value="XiaomiMi9TPro">Xiaomi Mi 9T Pro</option>
+                            </optgroep>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="formulier">
+                    <legend class="formPadding">Opslag</legend>
+                    <label for="opslagKeuze">
+                        Maak je keuze!
+                        <select name="opslagKeuze" id="opslagKeuze">
+                            <optgroep label="Oplag">
+                                <option value="32GB">32GB</option>
+                                <option value="64GB">64GB</option>
+                                <option value="128GB">128GB</option>
+                            </optgroep>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="formulier">
+                    <legend class="formPadding">Kleur</legend>
+                    <label for="kleur">De kleur van jouw smartphone: </label>
+                    <input type="color" id="kleur" name="kleur"
+                           value="#e66465">
+                </fieldset>
+                <fieldset class="formulier">
+                    <legend class="formPadding">Algemene info:</legend>
+                    <label for="naam">Geef je naam:</label>
+                    <input type="text" id="naam" naam="naam" size="30" required placeholder="Jef Peeters">
+                    <br>
+                    <label for="leeftijd">Leeftijd:</label>
+                    <input type="number" id="leeftijd" leeftijd="leeftijd" size="10" placeholder="18"required min="1" max="130">
+                    <br>
+                    <label for="adres">Adres:</label>
+                    <input type="text" id="adres" adres="adres" size = "45" placeholder="Kerkstraat 17 2980 Zoersel"required>
+                    <br>
+                    <label for="nummer">Telefoonnummer:</label>
+                    <input type="tel" id="nummer" name="nummer" pattern="^0?[1-9][0-9]{7,8}$" placeholder="0477777777"required>
+                    <br>
+                    <label for="email"> email:</label>
+                    <input type="email" id="email" adres="email" size="30" placeholder="jef@gmail.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"required>
+                    <br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </article>
+
+</main>
+<aside class="grid classAside">
+    <p>Totaalprijs:</p>
+</aside>
+
+<footer class="grid classFooter footer">
+    <ul>
+        <li>Contact info:</li>
+        <li>robbe.gillis@student.kdg.be</li>
+        <li>© Robbe Gillis</li>
+    </ul>
+</footer>
+</body>
+</html>

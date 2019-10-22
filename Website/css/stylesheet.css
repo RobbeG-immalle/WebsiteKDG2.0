@@ -1,0 +1,298 @@
+.verborgen {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -10000px;
+}
+
+/*Navigation*/
+.active
+{
+    color: #9BA0BC;
+    background-color: white;
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*flex-grow:1;*/
+    /*width:100%;*/
+}
+nav li
+{
+    float: left;
+    padding: 10px 16px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+li a:hover
+{
+    transition: 0.75s ease;
+    background-color: white;
+    color:lightsalmon;
+    /*border-top: 2px solid #ffffff;*/
+    /*border-bottom: 2px solid #ffffff;*/
+}
+
+/*Subpage navigation*/
+
+ul > li > ul
+{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    border: solid black 1px;
+    border-radius: 25px;
+    /*transition: max-height 500ms 800ms, opacity 300ms 800ms;*/
+
+}
+ul li:hover > ul,
+ul li ul:hover {
+
+    visibility: visible;
+    margin-left:150px;
+    margin-top:-2px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*BODY*/
+
+body
+{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Inconsolata', monospace;
+}
+
+/*Grids*/
+
+.bodygridnoAside
+{
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 7fr 2fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+            "headerArea headerArea"
+            "mainArea mainArea"
+            "footerArea footerArea";
+}
+
+.bodygrid
+{
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 7fr 2fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+            "headerArea headerArea"
+            "mainArea asideArea"
+            "footerArea footerArea";
+}
+
+@media screen and (max-width: 600px)
+{
+    .bodygrid
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: unset;
+        grid-gap: 10px;
+        grid-template-areas:
+                "headerArea"
+                "mainArea"
+                "asideArea"
+                "footerArea";
+        height: unset;
+    }
+}
+.grid
+{
+    border-radius: 5px;
+    padding:20px;
+}
+.classMain
+{
+    grid-area: mainArea;
+    background-color: lightblue;
+}
+.classHeader
+{
+    grid-area: headerArea;
+    background-color: lightblue;
+}
+.classAside
+{
+    grid-area: asideArea;
+    background-color: lightblue;
+}
+.classFooter
+{
+    grid-area: footerArea;
+    background-color: lightblue;
+}
+
+/*Aside*/
+
+.classAside > img
+{
+    width: 100%;
+}
+/*productenContainer*/
+.productContainerMain
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.productContainer
+{
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    padding: 15px;
+    margin:25px;
+    width: 15%;
+    height: auto;
+}
+.productContainer > img
+{
+    width:95%
+}
+
+
+/*blogContainer*/
+.blogContainerMain
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.blogContainer
+{
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    border: 2px solid black;
+    border-radius: 25px;
+    padding:20px;
+    margin: 50px;
+    width:40%;
+    height: auto;
+}
+.blogContainer >figure > img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*Buttons in product aside om van merk te veranderen.*/
+.buttonMain
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button
+{
+    border: 1px solid darkblue;
+    border-radius: 20px;
+    background-color: darkblue;
+    color:white;
+    padding: 10px;
+    margin: 25px;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+/*Imageresize*/
+.resize
+{
+    /*height: 250px;*/
+    /*width: auto;*/
+    width: 20%;
+    height: auto;
+}
+
+ProductFont
+.productFont
+{
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 20px;
+}
+
+.icon
+{
+    height: 50px;
+    width: 60px;
+
+}
+
+/*footer*/
+.footer > ul
+{
+    list-style-type: none;
+    text-align: center;
+}
+
+/*tekst centreren*/
+.center
+{
+    text-align: center;
+}
+
+/*form*/
+.formulier
+{
+    width: 40%;
+    margin:auto;
+    padding: 20px;
+    clear:both;
+}
+.formulier > input
+{
+    clear:both;
+}
+.reviewform
+{
+    width: 61.8%;
+    padding: 20px;
+}
+.formPadding
+{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+/*Google maps kaart*/
+.map
+{
+    padding-top:25px;
+    width: 65%;
+    height: 400px;
+}
