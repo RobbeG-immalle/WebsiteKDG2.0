@@ -24,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/Project1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -80,7 +80,7 @@
       <workItem from="1571594011373" duration="5498000" />
       <workItem from="1571658350727" duration="1362000" />
       <workItem from="1571727839444" duration="15653000" />
-      <workItem from="1571812231791" duration="1749000" />
+      <workItem from="1571812231791" duration="9827000" />
     </task>
     <servers />
   </component>

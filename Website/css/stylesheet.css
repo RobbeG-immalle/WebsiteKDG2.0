@@ -27,7 +27,7 @@ nav ul
     display: flex;
     flex-wrap:wrap;
     /*overflow: hidden;*/
-    background-color: lightblue;
+    background-color: #3A405A;
     justify-content: space-around;
 }
 nav li
@@ -113,6 +113,8 @@ body
     margin-left: auto;
     margin-right: auto;
     font-family: 'Inconsolata', monospace;
+    color:white;
+    background-color: #99B2DD;
 }
 
 /*Grids*/
@@ -158,6 +160,32 @@ body
         height: unset;
     }
 }
+.flexContainer1
+{
+    width: 40%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+.flexContainer2
+{
+    width: 40%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+.test
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*.flexContainer section > figure > img*/
+/*{*/
+/*    width: 80%;*/
+/*}*/
+
 .grid
 {
     border-radius: 5px;
@@ -166,22 +194,22 @@ body
 .classMain
 {
     grid-area: mainArea;
-    background-color: lightblue;
+    background-color: #3A405A;
 }
 .classHeader
 {
     grid-area: headerArea;
-    background-color: lightblue;
+    background-color: #3A405A;
 }
 .classAside
 {
     grid-area: asideArea;
-    background-color: lightblue;
+    background-color: #3A405A;
 }
 .classFooter
 {
     grid-area: footerArea;
-    background-color: lightblue;
+    background-color: #3A405A;
 }
 
 /*Aside*/
@@ -206,12 +234,12 @@ body
     margin:25px;
     width: 15%;
     height: auto;
+    color:black;
 }
 .productContainer > img
 {
     width:95%
 }
-
 
 /*blogContainer*/
 .blogContainerMain
@@ -228,7 +256,7 @@ body
     border-radius: 25px;
     padding:20px;
     margin: 50px;
-    width:40%;
+    width:35%;
     height: auto;
 }
 .blogContainer >figure > img
@@ -248,9 +276,8 @@ body
 }
 .button
 {
-    border: 1px solid darkblue;
     border-radius: 20px;
-    background-color: darkblue;
+    background-color: #99B2DD;
     color:white;
     padding: 10px;
     margin: 25px;
@@ -268,13 +295,21 @@ body
     height: auto;
 }
 
-ProductFont
 .productFont
 {
     font-weight: bold;
     font-size: large;
     padding-bottom: 20px;
 }
+/*.separateProduct*/
+/*{*/
+/*    float:left;*/
+/*}*/
+
+/*.separateProductFont*/
+/*{*/
+/*    float:right;*/
+/*}*/
 
 .icon
 {
@@ -304,6 +339,10 @@ ProductFont
     padding: 20px;
     clear:both;
 }
+.formulier  > label
+{
+    display: block;
+}
 .formulier > input
 {
     clear:both;
@@ -315,8 +354,8 @@ ProductFont
 }
 .formPadding
 {
-    padding-top:20px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
 }
 
 /*Google maps kaart*/
@@ -326,3 +365,15 @@ ProductFont
     width: 65%;
     height: 400px;
 }
+
+/*Tabellen*/
+
+/*Iphone 7*/
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-ggf4{font-size:16px;background-color:#e9afa3;border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-261r{font-weight:bold;background-color:#e9afa3;border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-ekkh{font-weight:bold;background-color:#e9afa3;border-color:inherit;text-align:center;vertical-align:top}
