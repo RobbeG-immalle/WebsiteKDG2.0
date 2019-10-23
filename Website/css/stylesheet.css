@@ -121,13 +121,13 @@ body
 {
     height: 98vh;
     display: grid;
-    grid-template-columns: 7fr 2fr;
+    grid-template-columns: 7fr;
     grid-template-rows: 1fr 5fr 1fr;
     grid-gap: 10px;
     grid-template-areas:
-            "headerArea headerArea"
-            "mainArea mainArea"
-            "footerArea footerArea";
+            "headerArea"
+            "mainArea"
+            "footerArea";
 }
 
 .bodygrid
@@ -199,7 +199,7 @@ body
 }
 .productContainer
 {
-    border: 2px solid black;
+    border: 1.5px solid black;
     border-radius: 25px;
     background-color: white;
     padding: 15px;
