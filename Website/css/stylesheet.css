@@ -291,7 +291,7 @@ body
 .button
 {
     border-radius: 20px;
-    background-color: rgba(153, 178, 221, 0.95);
+    background-color: rgba(153, 178, 221, 0.27);
     color:white;
     padding: 10px;
     margin: 25px;
@@ -305,16 +305,11 @@ body
     font-weight: bold;
     font-size: large;
 }
-/*.separateProduct*/
-/*{*/
-/*    float:left;*/
-/*}*/
 
-/*.separateProductFont*/
-/*{*/
-/*    float:right;*/
-/*}*/
-
+.fontColorSidePage
+{
+    color:white;
+}
 .icon
 {
     height: 50px;
