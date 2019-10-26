@@ -51,8 +51,8 @@ li a {
 li a:hover
 {
     transition: 0.75s ease;
-    background-color: white;
-    color:lightsalmon;
+    background-color: rgb(255,255,255);
+    color:#BF4C49;
     /*border-top: 2px solid #ffffff;*/
     transform: scale3d(1.12,1.12,1);
     /*border-bottom: 2px solid #ffffff;*/
@@ -79,7 +79,7 @@ ul > li > ul
     position:absolute;
     width:100%;
     transition: max-height 500ms 800ms, opacity 300ms 800ms;
-    background-color: rgba(255, 160, 122, 0.96);
+    background-color: #BF4C49;
 }
 .subnavBorder1
 {
@@ -322,6 +322,10 @@ body
 {
     list-style-type: none;
     text-align: center;
+}
+footer
+{
+    margin-bottom: 10px;
 }
 
 /*tekst centreren*/
