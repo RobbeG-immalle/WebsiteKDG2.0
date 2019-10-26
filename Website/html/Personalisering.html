@@ -33,10 +33,10 @@
 
 <main class="grid classMain">
     <article>
+        <h2 class="verborgen">Personalisering</h2>
         <section>
             <h2 class="center">Personaliseer je keuze!</h2>
             <p class="center">Kies eerst de gewenste Smartphone!</p>
-            <h2 class="center">Bestelling</h2>
             <form action="../html/resultaat.html" autocomplete="on" method="get">
                 <fieldset class="formulier">
                     <legend class="formPadding">Type smartphone:</legend>
@@ -79,11 +79,11 @@
                     <label for="opslagKeuze">
                         Maak je keuze!
                         <select name="opslagKeuze" id="opslagKeuze">
-                            <optgroep label="Oplag">
+                            <optgroup label="Oplag">
                                 <option value="32GB">32GB</option>
                                 <option value="64GB">64GB +30€</option>
                                 <option value="128GB">128GB +60€</option>
-                            </optgroep>
+                            </optgroup>
                         </select>
                     </label>
                 </fieldset>
@@ -91,24 +91,24 @@
                     <legend class="formPadding">Kleur</legend>
                     <label for="kleur">De kleur van jouw smartphone: </label>
                     <input type="color" id="kleur" name="kleur"
-                           value="#e66465">
+                           value="">
                 </fieldset>
                 <fieldset class="formulier">
                     <legend class="formPadding">Algemene info:</legend>
-                    <label for="naam">Geef je naam:</label>
-                    <input type="text" id="naam" naam="naam" size="30" required placeholder="Jef Peeters">
+                    <label for="name">Geef je naam:</label>
+                    <input type="text" id="name" name="name" size="30" required placeholder="Jef Peeters">
                     <br>
-                    <label for="leeftijd">Leeftijd:</label>
-                    <input type="number" id="leeftijd" leeftijd="leeftijd" size="10" placeholder="18"required min="13" max="130">
+                    <label for="getal">Leeftijd:</label>
+                    <input type="number" id="getal" placeholder="18" required min="13" max="130">
                     <br>
                     <label for="adres">Adres:</label>
-                    <input type="text" id="adres" adres="adres" size = "45" placeholder="Kerkstraat 17 2980 Zoersel"required>
+                    <input type="text" id="adres" size = "45" placeholder="Kerkstraat 17 2980 Zoersel" required>
                     <br>
                     <label for="nummer">Gsmnummer:</label>
-                    <input type="tel" id="nummer" name="nummer" pattern="^0?[1-9][0-9]{7,8}$" placeholder="0477777777"required>
+                    <input type="tel" id="nummer" pattern="^0?[1-9][0-9]{7,8}$" placeholder="0477777777" required>
                     <br>
                     <label for="email"> email:</label>
-                    <input type="email" id="email" adres="email" size="30" placeholder="jef@gmail.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"required>
+                    <input type="email" id="email" size="30" placeholder="jef@gmail.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"    required>
                     <br>
                     <button type="submit">Submit</button>
                 </fieldset>

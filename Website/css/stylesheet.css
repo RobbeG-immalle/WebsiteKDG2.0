@@ -174,6 +174,10 @@ body
     flex-direction: row;
     justify-content: space-evenly;
 }
+.noFrameBorder
+{
+    border: 0;
+}
 
 .grid
 {
