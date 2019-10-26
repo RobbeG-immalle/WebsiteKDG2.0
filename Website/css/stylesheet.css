@@ -368,6 +368,26 @@ footer
 {
     width: 100%;
 }
+
+.breadcrumb
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+.noBorder:hover {
+    border:0;
+    color:unset;
+    background-color: unset;
+    border-radius: unset;
+
+}
+.noClick
+{
+    pointer-events: none;
+}
+
 /*Tabellen iPhones*/
 
 .tg  {border-collapse:collapse;border-spacing:0;}
